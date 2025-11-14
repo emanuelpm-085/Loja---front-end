@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   background-image:
+    url(img/CARRINHO.avif);
+   background-position: center;/*centraliza a imagem*/
+   background-repeat: no-repeat;/*não repete a imagem*/
+   background-size: cover;/*cobre toda a tela*/
+   image-rendering: auto;/*renderização de imagem*/
+   height: 100vh;/*altura da imagem*/
+}
+
+header{
+    display: flex;
+    
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    font-family: "poppins";
+}
+.botao{
+ padding:  5px;
+ border: none;
+ border-radius: 10px;
+ text-transform: uppercase;
+ color: white;
+ background-color:black ;
+ cursor: pointer;
+ transition: all 0.10;
+}
+.botao:hover{
+ background-color: rgb(100, 100, 100);
+ transform: scale(1.05);
+}
