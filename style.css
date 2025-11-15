@@ -49,3 +49,33 @@ h1{
  background-color: rgb(100, 100, 100);
  transform: scale(1.05);
 }
+
+ #glow {
+      font-size: 3rem;
+      font-weight: 700;
+      /* cor base do texto */
+      color: #06060a;
+      /* animação do brilho */
+      animation: glow 1.5s ease-in-out infinite alternate;
+      /* melhora a transição visual */
+      will-change: text-shadow;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow:
+          0 0 6px rgba(108,99,255,0.7),
+          0 0 12px rgba(196, 196, 196, 0.5);
+      }
+      to {
+        text-shadow:
+          0 0 18px rgba(108,99,255,0.95),
+          0 0 36px rgba(108,99,255,0.6),
+          0 0 60px rgba(108,99,255,0.35);
+      }
+    }
+
+    /* acessibilidade: respeitar preferências de redução de movimento */
+    @media (prefers-reduced-motion: reduce) {
+      .glow { animation: none; text-shadow: 0 0 6px rgba(108,99,255,0.6); }
+    }
