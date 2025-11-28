@@ -1,25 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
 
-    <title>cadastro</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="cadastro.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
 
+    <link rel="stylesheet" href="cadastro.css">
 </head>
-<body class="">
-    <form class="flex flex-col " >
 
-        <h2>Criar/Entrar na conta</h2>
+<body class="min-h-screen flex items-center justify-center bg-slate-900">
 
-        <input type="text" name="" id="" placeholder="Nome completo">
-        <input type="email" name="" id="" placeholder="Email">
-        <input type="password" name="" id=""placeholder="Senha">
-        <input type="password" name="" id=""placeholder="Senha">
+    <form id="cadastro" 
+        class="flex flex-col gap-4 bg-slate-300 p-8 rounded-xl w-80 shadow-lg">
 
-        <button type="submit">Cadastre-se</button>
+        <h2 class="text-2xl font-bold text-center mb-2">Criar/Entrar na conta</h2>
+
+        <input type="text" name="nome" placeholder="Nome completo"
+            class="p-2 rounded border">
+
+        <input type="email" name="email" placeholder="Email"
+            class="p-2 rounded border">
+
+        <input type="password" name="senha" placeholder="Senha"
+            class="p-2 rounded border">
+
+        <input type="password" name="confirmar_senha" placeholder="Confirmar senha"
+            class="p-2 rounded border">
+
+        <button type="submit"
+            class="bg-blue-600 text-white p-2 rounded hover:bg-blue-700">
+            Cadastre-se
+        </button>
+/g
     </form>
 
 </body>
